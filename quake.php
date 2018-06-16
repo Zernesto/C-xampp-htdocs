@@ -38,6 +38,19 @@ foreach ($arquivo as $keyh => $linha) {
   if (explode(":", $comando)[0] == "Kill"){
     $kill++;
 
+    $jogadores = explode(":",$comando);
+    
+    echo "<br>";
+    echo $comando;
+
+    $joga = explode(":","killed");
+    echo $joga;
+
+    $jogadores= substr($comando, 15, 100);
+    echo "<br>";
+    echo $jogadores;
+
+
   }
   
   //fim do jogo
